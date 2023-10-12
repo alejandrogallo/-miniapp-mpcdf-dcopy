@@ -48,4 +48,4 @@ xcopy.gcc.32: xcopy.cxx
 
 xcopy.gcc.64: xcopy.cxx
 	$(GCC_SOURCE) && \
-		mpic++ $(CXXFLAGS) $(INT64) xcopy.cxx -lopenblas -L $(OPENBLAS_PATH)-o $@
+		mpic++ $(CXXFLAGS) $(INT64) xcopy.cxx -lopenblas -L $(OPENBLAS_PATH) -o $@
