@@ -34,11 +34,11 @@ xcopy.icc.64: xcopy.cxx
 
 xcopy.icc.32.mkl: xcopy.cxx
 	$(MKL_SOURCE) && \
-		mpiicpc -o $@ $(CXXFLAGS) $(INT32) xcopy.cxx -L$(MKLROOT)/lib/intel64 -lmkl
+		mpiicpc -o $@ $(CXXFLAGS) $(INT32) xcopy.cxx -L$(MKLROOT)/lib/intel64 -qmkl
 
 xcopy.icc.64.mkl: xcopy.cxx
 	$(MKL_SOURCE) && \
-		mpiicpc -o $@ $(CXXFLAGS) $(INT64) xcopy.cxx -L$(MKLROOT)/lib/intel64 -lmkl
+		mpiicpc -o $@ $(CXXFLAGS) $(INT64) xcopy.cxx -L$(MKLROOT)/lib/intel64 -qmkl
 
 # GNU ##########################################################################
 
