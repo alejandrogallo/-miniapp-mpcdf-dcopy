@@ -1,0 +1,5 @@
+module purge
+module load gcc/13 openmpi/4.1
+
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/u/airmler/src/atrip/extern/OpenBLAS/gcc13
